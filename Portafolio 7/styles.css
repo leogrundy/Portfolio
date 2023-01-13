@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+:root {
+  --bg-color: #020403;
+  --colorSub: #adadad;
+  --colorTit: #ffffff;
+  --menuColor: #1c1e1fbf;
+
+}
+h4.head,
+h3.title,
+h2.date,
+h2.nobold,
+h5,
+h6,
+p {
+  color: var(--colorSub);
+}
+h1.title,
+h5.title,
+h2.bold,
+h3.titleSection {
+  color: var(--colorTit);
+}
+
+body{
+  background-color: black;
+  font-family: 'Rubik', sans-serif;
+  color: var(--white-color);
+  width: 96vw;
+  
+}
+.icon__menu {
+  right: 0;
+  display: block;
+  cursor: pointer;
+}
+
+.menu {
+  background-color: var(--menuColor);
+  position: fixed;
+  min-height: 135px;
+  right: 0;
+  flex-direction: column;
+  width:30%;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  right: -100%;
+display: flex;
+  transition: right 0.5s;
+}
+.menu__show {
+  right: 0;
+}
+.profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  color: var(--colorSub);
+  gap: 20px;
+}
+.profile > p{
+  font-size: 25px;
+  font-weight: 500;
+}
+.profile > h1{
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  }
+.socialMedia{
+  display: flex;
+    gap: 30px;
+
+}
+.aboutMe  {
+  margin: 30px 10px;
+    text-align: center;
+}
+.mySkills{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+.experiences{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin: 40px 5px 0px 5px;
+
+}.experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.experience::before {
+  content: "";
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  margin-left: 10%;
+  margin-right: 10%;
+  top: 3;
+  background-color: #cecdcd62;
+}
+.date {
+  padding-top: 30px;
+  font-weight: 100;
+}
+.nobold {
+  font-weight: 100;
+}
+.proyects{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.proyect{
+  width: 80%;
+  margin: 15px 5px 0px 5px;
+}
+.contacts{
+  margin: 50px auto;
+  width: 80%
+}
+.contact{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap:5px;
+}
+.skillIco {
+  border-radius: 50%;
+  border: 6px solid #382a25;
+  background-color: #382a25;
+}
+@media (min-width: 800px){
+body {font-size: 18px;
+  background-color: var(--bg-color);
+  display: grid;
+  text-align: center;
+  max-width: 1024px;
+  margin:0 auto;
+  gap: 1 rem;
+}
+.menu{display: block;
+  position:static;
+  background-color: rgb(19, 17, 17);
+  height: 8vh;
+  position: fixed;
+  justify-content: end;
+  width: 100%;
+  transform: scaleX(100%);
+  transition: none;
+
+}
+
+.skillIco {
+  border-radius: 50%;
+  border: 6px solid #382a25;
+  background-color: #382a25;
+}
+.skill{
+  padding: 10px;
+}
+.mySkills{
+  display: grid;
+  place-content: center;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: auto;
+  justify-content: space-evenly;
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.experience::before {
+  content: "";
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  margin-left: 10%;
+  margin-right: 10%;
+  top: 3;
+  background-color: #cecdcd62;
+}
+.date {
+  padding-top: 30px;
+  font-weight: 100;
+}
+.nobold {
+  font-weight: 100;
+}
+
+.proyects {
+  display: grid;
+  padding-top: 15px;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.contacts {
+  padding-top: 15px;
+  gap: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+  justify-content: center;
+}
+img.contactIco {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  padding: 3px;
+  border: 1px solid var(--colorSub);
+}
+}
+.circle1{
+  border-radius: 50%;
+  border: 1px solid white;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  transform: translateX(-30%);
+}
+.circle2{
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 80px;
+  padding: 10px;
+}
+
+.circle3{
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+
+}
